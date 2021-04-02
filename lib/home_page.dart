@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mdi/mdi.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // models
 import 'package:flutter_company_listing/model/company_model.dart';
 
 // widgets
 import 'package:flutter_company_listing/widgets/company_card.dart';
-import 'package:mdi/mdi.dart';
-import 'package:provider/provider.dart';
 
+// providers
+import 'package:provider/provider.dart';
 import 'package:flutter_company_listing/model/theme_provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool isLoaded = false;
-  final String githubUrl = 'https://github.com/Adem68';
+  final String githubUrl = 'https://github.com/Adem68/flutter_company_listing/';
 
   @override
   void initState() {
