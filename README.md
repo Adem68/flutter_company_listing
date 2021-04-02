@@ -1,16 +1,6 @@
-# flutter_company_listing
+# Which Companies Using Flutter in Turkey 
 
-A new Flutter project.
+![demo](https://user-images.githubusercontent.com/21019611/113452409-94173780-940c-11eb-8cfe-7bea32f70765.gif)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You can easily see which companies using Flutter in Turkey. Also, you can easily handle your Flutter job search via this project.
