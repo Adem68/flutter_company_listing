@@ -142,5 +142,11 @@
     "website": "https://www.dusyeri.com/",
     "jobUrl": "https://www.kariyer.net/firma-profil/dusyeri-40010-42922",
     "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/jobs/"
-  }
+  },
+  {
+		"name": "TellMe",
+		"website": "https://tellme.gen.tr/",
+		"jobUrl": "",
+		"linkedin": "https://www.linkedin.com/company/tellmecorp/jobs/"
+	}
 ]
