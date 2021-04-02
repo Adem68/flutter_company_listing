@@ -87,18 +87,15 @@ class CompanyCard extends StatelessWidget {
                           ),
                         ),
                       if (item.linkedin.isNotEmpty)
-                        InkWell(
-                          borderRadius: BorderRadius.circular(40),
-                          onTap: () async {
+                        IconButton(
+                          splashRadius: 24,
+                          onPressed: () async {
                             if (await canLaunch(item.linkedin)) {
                               await launch(item.linkedin);
                             }
                           },
-                          child: const Padding(
-                            padding: EdgeInsets.all(8),
-                            child: Icon(
-                              Mdi.linkedin,
-                            ),
+                          icon: const Icon(
+                            Mdi.linkedin,
                           ),
                         ),
                     ],
