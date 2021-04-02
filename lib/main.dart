@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Company Listing',
+      title: 'Which Companies Using Flutter in Turkey',
       theme: themeProvider.getThemeData,
       home: const HomePage(),
     );

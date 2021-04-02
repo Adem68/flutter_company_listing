@@ -34,6 +34,5 @@ final lightTheme = ThemeData(
   backgroundColor: const Color(0xFFE5E5E5),
   accentColor: Colors.black,
   accentIconTheme: const IconThemeData(color: Colors.white),
-  accentColorBrightness: Brightness.light,
   dividerColor: Colors.white54,
 );
