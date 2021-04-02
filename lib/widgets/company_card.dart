@@ -5,6 +5,7 @@ import 'package:flutter_company_listing/model/company_model.dart';
 
 // packages
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:mdi/mdi.dart';
 import 'package:octo_image/octo_image.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -93,21 +94,10 @@ class CompanyCard extends StatelessWidget {
                               await launch(item.linkedin);
                             }
                           },
-                          child: Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(40),
-                              child: OctoImage(
-                                fit: BoxFit.cover,
-                                height: 40,
-                                width: 40,
-                                placeholderBuilder: (context) => const Center(
-                                  child: CircularProgressIndicator(),
-                                ),
-                                image: const CachedNetworkImageProvider(
-                                  'https://logo.clearbit.com/linkedin.com?size=40',
-                                ),
-                              ),
+                          child: const Padding(
+                            padding: EdgeInsets.all(8),
+                            child: Icon(
+                              Mdi.linkedin,
                             ),
                           ),
                         ),
