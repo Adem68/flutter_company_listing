@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Which Companies Using Flutter in Turkey 🇹🇷',
+          'Which Companies Using Flutter in Turkey',
           style: TextStyle(
             color: themeProvider.isLightTheme ? Colors.white : Colors.black,
           ),
