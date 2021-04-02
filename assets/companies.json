@@ -125,10 +125,28 @@
     "jobUrl": "https://www.kariyer.net/firma-profil/modanisa-elektronik-magazacilik-ve-ticaret-anonim-44974-93350",
     "linkedin": "https://www.linkedin.com/company/modanisa/jobs/"
   },
-   {
-    "name": "TellMe",
-    "website": "https://tellme.gen.tr/",
-    "jobUrl": "https://www.linkedin.com/company/tellmecorp/jobs/",
-    "linkedin": "https://www.linkedin.com/company/tellmecorp/"
-  }
+  {
+    "name": "VBT Yazılım A.Ş.",
+    "website": "https://www.vbt.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/vbt-yazilim-a-s-12094-2287",
+    "linkedin": "https://www.linkedin.com/company/vbt-bilgi-teknolojileri/"
+  },
+  {
+    "name": "Aytemiz",
+    "website": "https://www.aytemiz.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/aytemiz-akaryakit-dagitim-a-s-24449-15870",
+    "linkedin": "https://www.linkedin.com/company/aytemizofficial/jobs/"
+  },
+  {
+    "name": "Düşyeri",
+    "website": "https://www.dusyeri.com/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/dusyeri-40010-42922",
+    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/jobs/"
+  },
+  {
+		"name": "TellMe",
+		"website": "https://tellme.gen.tr/",
+		"jobUrl": "",
+		"linkedin": "https://www.linkedin.com/company/tellmecorp/jobs/"
+	}
 ]
