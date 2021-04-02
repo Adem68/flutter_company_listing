@@ -112,5 +112,17 @@
     "website": "https://coflow.com.tr/",
     "jobUrl": "https://www.kariyer.net/firma-profil/coflow-teknoloji-danismanlik-ve-ticaret-limited-si-226270-259301",
     "linkedin": "https://www.linkedin.com/company/co-flow-tech/jobs/"
+  },
+  {
+    "name": "Başarsoft",
+    "website": "https://www.basarsoft.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/basarsoft-bilgi-teknolojileri-a-s-40271-123260",
+    "linkedin": "https://www.linkedin.com/company/basarsoft/jobs/"
+  },
+  {
+    "name": "Modanisa",
+    "website": "https://www.modanisa.com/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/modanisa-elektronik-magazacilik-ve-ticaret-anonim-44974-93350",
+    "linkedin": "https://www.linkedin.com/company/modanisa/jobs/"
   }
 ]
