@@ -53,72 +53,82 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                           : getAppStoreData(appItem),
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
-                          return Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 20,
-                                ),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    if (snapshot.data!.imageUrl!.isNotEmpty)
-                                      AppLogo(
-                                        imageUrl: snapshot.data!.imageUrl!,
-                                      ),
-                                    const SizedBox(width: 20),
-                                    Expanded(
-                                      child: Center(
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              appItem.name,
-                                              style: const TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 30,
-                                              ),
-                                            ),
-                                            if (appItem.description!.isNotEmpty)
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                  top: 10,
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 20),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 10,
+                                    vertical: 20,
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      if (snapshot.data!.imageUrl!.isNotEmpty)
+                                        AppLogo(
+                                          imageUrl: snapshot.data!.imageUrl!,
+                                        ),
+                                      const SizedBox(width: 20),
+                                      Expanded(
+                                        child: Center(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                appItem.name,
+                                                style: const TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 30,
                                                 ),
-                                                child:
-                                                    Text(appItem.description!),
                                               ),
-                                          ],
+                                              if (appItem
+                                                  .description!.isNotEmpty)
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                    top: 10,
+                                                  ),
+                                                  child: Text(
+                                                      appItem.description!),
+                                                ),
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    if (appItem.website!.isNotEmpty)
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(right: 10),
-                                        child: WebsiteButton(
-                                          website: appItem.website!,
+                                      if (appItem.website!.isNotEmpty)
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(right: 10),
+                                          child: WebsiteButton(
+                                            website: appItem.website!,
+                                          ),
                                         ),
-                                      ),
-                                    if (appItem.playStore!.isNotEmpty)
+                                      if (appItem.playStore!.isNotEmpty)
+                                        StoreButton(
+                                          type: 0,
+                                          storeUrl: appItem.playStore!,
+                                        ),
                                       StoreButton(
-                                        type: 0,
-                                        storeUrl: appItem.playStore!,
+                                        type: 1,
+                                        storeUrl: appItem.appStore!,
                                       ),
-                                    StoreButton(
-                                      type: 1,
-                                      storeUrl: appItem.appStore!,
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              if (snapshot.data!.screenshots!.isNotEmpty)
-                                AppScreenShots(
-                                  screenshots: snapshot.data!.screenshots!,
-                                ),
-                            ],
+                                if (snapshot.data!.screenshots!.isNotEmpty)
+                                  AppScreenShots(
+                                    screenshots: snapshot.data!.screenshots!,
+                                  ),
+                                if (index != apps.length)
+                                  const Divider(
+                                    thickness: 1,
+                                    color: Colors.grey,
+                                  )
+                              ],
+                            ),
                           );
                         } else {
                           if (appItem.appStore!.isNotEmpty) {
@@ -181,10 +191,7 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
         .substring(2);
 
     final res = await http.get(
-      Uri.parse('https://itunes.apple.com/lookup?id=$appId'),
-      headers: {
-        'access-control-allow-origin': 'https://adem68.github.io',
-      },
+      Uri.parse('https://flutter-company-listing-api.vercel.app/app/$appId'),
     );
 
     final appStoreItem =
@@ -274,9 +281,6 @@ class AppLogo extends StatelessWidget {
           ),
           image: CachedNetworkImageProvider(
             imageUrl,
-            headers: {
-              'access-control-allow-origin': 'https://adem68.github.io',
-            },
           ),
         ),
       );
