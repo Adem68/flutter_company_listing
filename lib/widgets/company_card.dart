@@ -60,7 +60,7 @@ class _CompanyCardState extends State<CompanyCard> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(40),
                     child: OctoImage(
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                       height: 80,
                       width: 80,
                       errorBuilder: OctoError.icon(),
