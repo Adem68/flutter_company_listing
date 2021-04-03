@@ -6,10 +6,10 @@
     "linkedin": "https://www.linkedin.com/company/radity/",
     "apps": [
       {
-        "name": "Chiar‪a‬",
-        "website": "https://chiara.app/",
-        "playStore": "https://play.google.com/store/apps/details?id=com.radity.chiara",
-        "appStore": "https://apps.apple.com/tr/app/chiara/id1467873377/"
+        "name": "prEPAre‪d‬",
+        "website": "https://www.prepared.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.prepared",
+        "appStore": "https://apps.apple.com/tr/app/prepared/id1533667853"
       }
     ]
   },
@@ -101,7 +101,14 @@
     "name": "Potensas",
     "website": "https://www.potensas.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/potensas/"
+    "linkedin": "https://www.linkedin.com/company/potensas/",
+    "apps": [
+      {
+        "name": "Earthquake & Go Ba‪g‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.potensas.lastearthquakes",
+        "appStore": "https://apps.apple.com/tr/app/earthquake-go-bag/id1497322793"
+      }
+    ]
   },
   {
     "name": "Bytelus",
@@ -113,7 +120,15 @@
     "name": "KoçSistem",
     "website": "https://www.kocsistem.com.tr/",
     "jobUrl": "https://www.kariyer.net/firma-profil/kocsistem-12832-41024",
-    "linkedin": "https://www.linkedin.com/company/kocsistem/"
+    "linkedin": "https://www.linkedin.com/company/kocsistem/",
+    "apps": [
+      {
+        "name": "Koç Emekli Vakf‪ı‬",
+        "website": "https://www.khev.org.tr/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.koc.kocemekli",
+        "appStore": "https://apps.apple.com/tr/app/ko%C3%A7-emekli-vakf%C4%B1/id1472325104"
+      }
+    ]
   },
   {
     "name": "PİTON Ar-Ge ve Yazılım Evi",
@@ -176,7 +191,15 @@
     "name": "VBT Yazılım A.Ş.",
     "website": "https://www.vbt.com.tr/",
     "jobUrl": "https://www.kariyer.net/firma-profil/vbt-yazilim-a-s-12094-2287",
-    "linkedin": "https://www.linkedin.com/company/vbt-bilgi-teknolojileri/"
+    "linkedin": "https://www.linkedin.com/company/vbt-bilgi-teknolojileri/",
+    "apps": [
+      {
+        "name": "Cumhuriyet",
+        "website": "https://www.cumhuriyet.com.tr/",
+        "playStore": "https://play.google.com/store/apps/details?id=tr.com.vbt.cumhuriyetmobileapp",
+        "appStore": "https://apps.apple.com/tr/app/cumhuriyet/id1503350537/"
+      }
+    ]
   },
   {
     "name": "Aytemiz",
@@ -208,7 +231,15 @@
     "name": "Rh Pozitif",
     "website": "https://rhpozitif.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/rh-pozitif/"
+    "linkedin": "https://www.linkedin.com/company/rh-pozitif/",
+    "apps": [
+      {
+        "name": "RH Sözlük",
+        "website": "https://www.remzihoca.com",
+        "playStore": "https://play.google.com/store/apps/details?id=com.rh.sozluk",
+        "appStore": "https://apps.apple.com/tr/app/rh-s%C3%B6zl%C3%BCk/id1484805273"
+      }
+    ]
   },
   {
     "name": "Tahsilist",
@@ -226,7 +257,14 @@
     "name": "Yesil Science",
     "website": "https://www.yesilscience.com/tr/",
     "jobUrl": "https://www.yesilscience.com/tr/kariyer/",
-    "linkedin": "https://www.linkedin.com/company/yesil-science/"
+    "linkedin": "https://www.linkedin.com/company/yesil-science/",
+    "apps": [
+      {
+        "name": "Eye Rest Reminder: Eye Exercises and Breaks",
+        "playStore": "https://play.google.com/store/apps/details?id=com.yesilscience.eyerestreminder",
+        "appStore": "https://apps.apple.com/tr/app/eye-rest-reminder/id1559425754"
+      }
+    ]
   },
   {
     "name": "IBTECH A.S.",
@@ -237,7 +275,8 @@
       {
         "name": "Mono",
         "website": "https://www.monoapp.net/",
-        "playStore": "https://play.google.com/store/apps/details?id=com.ictech.mono"
+        "playStore": "https://play.google.com/store/apps/details?id=com.ictech.mono",
+        "appStore": "https://apps.apple.com/tr/app/mono/id1510777408"
       }
     ]
   },
