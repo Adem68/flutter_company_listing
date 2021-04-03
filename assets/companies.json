@@ -183,19 +183,14 @@
     "name": "T.C. İçişleri Bakanlığı Emniyet Genel Müdürlüğü",
     "website": "https://www.egm.gov.tr/",
     "jobUrl": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Huma Breath",
-    "website": "https://humabreath.com/",
-    "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/humabreath/"
-  },
-  {
-    "name": "MonoPayments",
-    "website": "https://monopayments.com/",
-    "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/monopayments/"
-
+    "linkedin": "",
+    "apps": [
+      {
+        "name": "EGM SEC",
+        "slogan": "",
+        "playStore": "https://play.google.com/store/apps/details?id=com.egm.sec",
+        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787?l=tr"
+      }
+    ]
   }
 ]
