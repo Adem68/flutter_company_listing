@@ -22,6 +22,7 @@ class _$AppModelTearOff {
 
   _AppModel call(
       {required String name,
+      String? website = '',
       String? description = '',
       String? imageUrl = '',
       String? playStore = '',
@@ -29,6 +30,7 @@ class _$AppModelTearOff {
       List<String>? screenshots = const []}) {
     return _AppModel(
       name: name,
+      website: website,
       description: description,
       imageUrl: imageUrl,
       playStore: playStore,
@@ -48,6 +50,7 @@ const $AppModel = _$AppModelTearOff();
 /// @nodoc
 mixin _$AppModel {
   String get name => throw _privateConstructorUsedError;
+  String? get website => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   String? get imageUrl => throw _privateConstructorUsedError;
   String? get playStore => throw _privateConstructorUsedError;
@@ -66,6 +69,7 @@ abstract class $AppModelCopyWith<$Res> {
       _$AppModelCopyWithImpl<$Res>;
   $Res call(
       {String name,
+      String? website,
       String? description,
       String? imageUrl,
       String? playStore,
@@ -84,6 +88,7 @@ class _$AppModelCopyWithImpl<$Res> implements $AppModelCopyWith<$Res> {
   @override
   $Res call({
     Object? name = freezed,
+    Object? website = freezed,
     Object? description = freezed,
     Object? imageUrl = freezed,
     Object? playStore = freezed,
@@ -95,6 +100,10 @@ class _$AppModelCopyWithImpl<$Res> implements $AppModelCopyWith<$Res> {
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
+      website: website == freezed
+          ? _value.website
+          : website // ignore: cast_nullable_to_non_nullable
+              as String?,
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -126,6 +135,7 @@ abstract class _$AppModelCopyWith<$Res> implements $AppModelCopyWith<$Res> {
   @override
   $Res call(
       {String name,
+      String? website,
       String? description,
       String? imageUrl,
       String? playStore,
@@ -145,6 +155,7 @@ class __$AppModelCopyWithImpl<$Res> extends _$AppModelCopyWithImpl<$Res>
   @override
   $Res call({
     Object? name = freezed,
+    Object? website = freezed,
     Object? description = freezed,
     Object? imageUrl = freezed,
     Object? playStore = freezed,
@@ -156,6 +167,10 @@ class __$AppModelCopyWithImpl<$Res> extends _$AppModelCopyWithImpl<$Res>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
+      website: website == freezed
+          ? _value.website
+          : website // ignore: cast_nullable_to_non_nullable
+              as String?,
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -186,6 +201,7 @@ class __$AppModelCopyWithImpl<$Res> extends _$AppModelCopyWithImpl<$Res>
 class _$_AppModel implements _AppModel {
   const _$_AppModel(
       {required this.name,
+      this.website = '',
       this.description = '',
       this.imageUrl = '',
       this.playStore = '',
@@ -197,6 +213,9 @@ class _$_AppModel implements _AppModel {
 
   @override
   final String name;
+  @JsonKey(defaultValue: '')
+  @override
+  final String? website;
   @JsonKey(defaultValue: '')
   @override
   final String? description;
@@ -215,7 +234,7 @@ class _$_AppModel implements _AppModel {
 
   @override
   String toString() {
-    return 'AppModel(name: $name, description: $description, imageUrl: $imageUrl, playStore: $playStore, appStore: $appStore, screenshots: $screenshots)';
+    return 'AppModel(name: $name, website: $website, description: $description, imageUrl: $imageUrl, playStore: $playStore, appStore: $appStore, screenshots: $screenshots)';
   }
 
   @override
@@ -224,6 +243,9 @@ class _$_AppModel implements _AppModel {
         (other is _AppModel &&
             (identical(other.name, name) ||
                 const DeepCollectionEquality().equals(other.name, name)) &&
+            (identical(other.website, website) ||
+                const DeepCollectionEquality()
+                    .equals(other.website, website)) &&
             (identical(other.description, description) ||
                 const DeepCollectionEquality()
                     .equals(other.description, description)) &&
@@ -245,6 +267,7 @@ class _$_AppModel implements _AppModel {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(name) ^
+      const DeepCollectionEquality().hash(website) ^
       const DeepCollectionEquality().hash(description) ^
       const DeepCollectionEquality().hash(imageUrl) ^
       const DeepCollectionEquality().hash(playStore) ^
@@ -265,6 +288,7 @@ class _$_AppModel implements _AppModel {
 abstract class _AppModel implements AppModel {
   const factory _AppModel(
       {required String name,
+      String? website,
       String? description,
       String? imageUrl,
       String? playStore,
@@ -275,6 +299,8 @@ abstract class _AppModel implements AppModel {
 
   @override
   String get name => throw _privateConstructorUsedError;
+  @override
+  String? get website => throw _privateConstructorUsedError;
   @override
   String? get description => throw _privateConstructorUsedError;
   @override

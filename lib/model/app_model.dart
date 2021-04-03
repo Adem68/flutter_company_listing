@@ -6,6 +6,7 @@ part 'app_model.g.dart';
 class AppModel with _$AppModel {
   const factory AppModel({
     required String name,
+    @Default('') String? website,
     @Default('') String? description,
     @Default('') String? imageUrl,
     @Default('') String? playStore,
