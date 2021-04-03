@@ -16,7 +16,7 @@ const RESOURCES = {
 "assets/AssetManifest.json": "449823b61151d2e2c9c189dca542cc9b",
 "assets/assets/companies.json": "60c218a4e75c9499b832dd42994aae06",
 "assets/FontManifest.json": "88c4d131319acabb39aa01e02c9076fa",
-"main.dart.js": "cc796e418182362889338829e244c9b7",
+"main.dart.js": "2313e4a2962e088bd170660efea5e28e",
 "version.json": "9f93f48b11403cefa8676231ca2af006"
 };
 

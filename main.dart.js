@@ -54224,7 +54224,7 @@ b1:function(){this.bi()},
 O:function(a,b){var s,r,q,p,o,n,m=this,l=null,k={},j=Y.abP(b,t.Dh)
 k.a=j.a
 s=b.a8(t.w).f
-r=L.a7j("Which Companies Using Flutter in Turkey",l,l,A.uZ(l,l,j.a?C.j:C.k,l,l,l,l,l,l,l,l,l,l,l,l,l,!0,l,l,l,l,l,l))
+r=L.a7j("Companies using Flutter in Turkey",l,l,A.uZ(l,l,j.a?C.j:C.k,l,l,l,l,l,l,l,l,l,l,l,l,l,!0,l,l,l,l,l,l))
 q=j.a
 p=B.rv(l,L.R5(C.yt,q?C.j:C.k),new X.a0C(m),24,l)
 o=q?C.yu:C.ys
@@ -54296,7 +54296,7 @@ F.a5o.prototype={
 $1:function(a){return new K.ie(!1,new P.br(t.V))},
 $S:333}
 F.Bm.prototype={
-O:function(a,b){return new S.t_(C.wE,"Which Companies Using Flutter in Turkey",Y.abP(b,t.Dh).a?$.agt():$.agq(),!1,null)}}
+O:function(a,b){return new S.t_(C.wE,"Companies using Flutter in Turkey",Y.abP(b,t.Dh).a?$.agt():$.agq(),!1,null)}}
 A.a4B.prototype={
 $1:function(a){var s=new A.fH(),r=J.ak(a)
 s.a=r.h(a,"name")
