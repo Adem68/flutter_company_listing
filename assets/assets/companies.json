@@ -3,13 +3,35 @@
     "name": "Radity",
     "website": "https://radity.com/",
     "jobUrl": "https://radity.com/en/careers/",
-    "linkedin": "https://www.linkedin.com/company/radity/"
+    "linkedin": "https://www.linkedin.com/company/radity/",
+    "apps": [
+      {
+        "name": "Chiar‪a‬",
+        "website": "https://chiara.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.chiara",
+        "appStore": "https://apps.apple.com/tr/app/chiara/id1467873377/"
+      }
+    ]
   },
   {
     "name": "Paraşüt",
     "website": "https://www.parasut.com/",
     "jobUrl": "https://parasut.recruitee.com/",
-    "linkedin": "https://www.linkedin.com/company/parasut/"
+    "linkedin": "https://www.linkedin.com/company/parasut/",
+    "apps": [
+      {
+        "name": "Atlas Asist",
+        "website": "https://www.parasut.com/lp/atlas-asist",
+        "playStore": "https://play.google.com/store/apps/details?id=com.parasut.atlasasist",
+        "appStore": "https://apps.apple.com/tr/app/atlas-asist/id1534337610/"
+      },
+      {
+        "name": "Mikro Şirketim",
+        "website": "https://www.mikro.com.tr/urunler-ve-hizmetler/mikro-sirketim",
+        "playStore": "https://play.google.com/store/apps/details?id=com.mikro.mikrosirketim",
+        "appStore": "https://apps.apple.com/tr/app/mikro-%C5%9Firketim/id1526677643"
+      }
+    ]
   },
   {
     "name": "Monday Hero",
@@ -21,13 +43,29 @@
     "name": "Gain",
     "website": "https://www.gain.tv/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/gainmedya/"
+    "linkedin": "https://www.linkedin.com/company/gainmedya/",
+    "apps": [
+      {
+        "name": "GAİN",
+        "website": "https://www.gain.tv/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.trgain.mikrogain",
+        "appStore": "https://apps.apple.com/us/app/gai-n/id1516180910"
+      }
+    ]
   },
   {
     "name": "Ratel",
     "website": "https://ratel.com.tr/",
     "jobUrl": "https://ratel.com.tr/tr/kariyer/",
-    "linkedin": "https://www.linkedin.com/company/ratel/"
+    "linkedin": "https://www.linkedin.com/company/ratel/",
+    "apps": [
+      {
+        "name": "2021 Wallpapers",
+        "website": "https://2021wallpaper.com/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.ratel.wallpaper",
+        "appStore": "https://apps.apple.com/us/app/2021-wallpapers-maker-cute-hd/id1555468983"
+      }
+    ]
   },
   {
     "name": "SambaPOS",
@@ -105,7 +143,16 @@
     "name": "makromusic",
     "website": "https://www.makromusic.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/makromusicapp/"
+    "linkedin": "https://www.linkedin.com/company/makromusicapp/",
+    "apps": [
+      {
+        "name": "makromusic",
+        "description": "Find Your Music Buddy!",
+        "website": "https://makromusic.com/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.pharos.aytemiz",
+        "appStore": "https://apps.apple.com/tr/app/makromusic-for-spotify/id1498773489"
+      }
+    ]
   },
   {
     "name": "CoFlow Teknoloji",
@@ -135,7 +182,15 @@
     "name": "Aytemiz",
     "website": "https://www.aytemiz.com.tr/",
     "jobUrl": "https://www.kariyer.net/firma-profil/aytemiz-akaryakit-dagitim-a-s-24449-15870",
-    "linkedin": "https://www.linkedin.com/company/aytemizofficial/"
+    "linkedin": "https://www.linkedin.com/company/aytemizofficial/",
+    "apps": [
+      {
+        "name": "Aytemiz Vaay",
+        "website": "https://www.aytemiz.com.tr/vaay/aytemiz-vaay-nedir/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.pharos.aytemiz",
+        "appStore": "https://apps.apple.com/tr/app/aytemiz-mobil/id1076097736"
+      }
+    ]
   },
   {
     "name": "Düşyeri",
@@ -177,13 +232,28 @@
     "name": "IBTECH A.S.",
     "website": "https://www.ibtech.com.tr/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/ibtech-a-s-"
+    "linkedin": "https://www.linkedin.com/company/ibtech-a-s-",
+    "apps": [
+      {
+        "name": "Mono",
+        "website": "https://www.monoapp.net/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.ictech.mono"
+      }
+    ]
   },
   {
     "name": "T.C. İçişleri Bakanlığı Emniyet Genel Müdürlüğü",
     "website": "https://www.egm.gov.tr/",
     "jobUrl": "",
-    "linkedin": ""
+    "linkedin": "",
+    "apps": [
+      {
+        "name": "EGM SEC",
+        "description": "",
+        "playStore": "https://play.google.com/store/apps/details?id=com.egm.sec",
+        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787?l=tr"
+      }
+    ]
   },
   {
     "name": "Huma Breath",

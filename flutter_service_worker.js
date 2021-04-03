@@ -11,12 +11,13 @@ const RESOURCES = {
 "/": "7abf8ae78f9e8b64c11664e05f56f4ee",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/mdi/fonts/materialdesignicons-webfont.ttf": "3e722fd57a6db80ee119f0e2c230ccff",
-"assets/NOTICES": "dc3001fc5c5244ef23aa369d3c2378e7",
+"assets/NOTICES": "17be57aaf7654e0c6cca5119ea3959ea",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/AssetManifest.json": "449823b61151d2e2c9c189dca542cc9b",
-"assets/assets/companies.json": "f058e737a7dc5603810634158f139532",
+"assets/AssetManifest.json": "60d83e25ca7e278c3bfd00dd631c1bc5",
+"assets/assets/companies.json": "69beb022b1453e51dd66425c284918bf",
+"assets/assets/companies_test.json": "97e1c9cba236fb9446c76934bee75e3a",
 "assets/FontManifest.json": "88c4d131319acabb39aa01e02c9076fa",
-"main.dart.js": "2313e4a2962e088bd170660efea5e28e",
+"main.dart.js": "6e2d7a314250931436a20da92c8f2067",
 "version.json": "9f93f48b11403cefa8676231ca2af006"
 };
 
