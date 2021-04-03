@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         actions: [
           IconButton(
+            splashRadius: 24,
             onPressed: () async {
               if (await canLaunch(githubUrl)) {
                 await launch(githubUrl);
@@ -59,6 +60,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           IconButton(
+            splashRadius: 24,
             onPressed: () async {
               isLightMode = !isLightMode;
               themeProvider.setThemeData(val: isLightMode);
