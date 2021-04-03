@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (_) => ThemeProvider(isLightTheme: true),
+      create: (_) => ThemeProvider(isLightTheme: false),
       child: const MyApp(),
     ),
   );
