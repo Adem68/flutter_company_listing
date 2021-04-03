@@ -28,10 +28,14 @@ class CompanyCard extends StatelessWidget {
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(10),
-          onTap: () {
+          onTap: () async {
             if (item.apps != null) {
-              Navigator.of(context).push(MaterialPageRoute(
+              await Navigator.of(context).push(MaterialPageRoute(
                   builder: (_) => CompanyDetailPage(item: item)));
+            } else {
+              if (await canLaunch(item.website)) {
+                await launch(item.website);
+              }
             }
           },
           child: Row(
