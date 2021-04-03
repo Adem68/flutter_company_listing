@@ -1,34 +1,23 @@
 import 'dart:convert';
 
+import 'package:flutter_company_listing/model/app_model.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'company_model.freezed.dart';
+part 'company_model.g.dart';
+
 List<CompanyModel> companyModelFromJson(String str) => List<CompanyModel>.from(
     json.decode(str).map((x) => CompanyModel.fromJson(x)));
 
-class CompanyModel {
-  CompanyModel({
-    required this.name,
-    required this.website,
-    required this.jobUrl,
-    required this.linkedin,
-  });
+@freezed
+class CompanyModel with _$CompanyModel {
+  const factory CompanyModel({
+    required String name,
+    required String website,
+    @Default('') String jobUrl,
+    @Default('') String linkedin,
+    List<AppModel>? apps,
+  }) = _CompanyModel;
 
-  CompanyModel.fromJson(Map<String, dynamic> json) {
-    name = json['name'];
-    website = json['website'];
-    jobUrl = json['jobUrl'];
-    linkedin = json['linkedin'];
-  }
-
-  late String name;
-  late String website;
-  late String jobUrl;
-  late String linkedin;
-
-  Map<String, dynamic> toJson() {
-    final data = <String, dynamic>{};
-    data['name'] = name;
-    data['website'] = website;
-    data['jobUrl'] = jobUrl;
-    data['alternateJobUrl'] = linkedin;
-    return data;
-  }
+  factory CompanyModel.fromJson(Map<String, dynamic> json) =>
+      _$CompanyModelFromJson(json);
 }

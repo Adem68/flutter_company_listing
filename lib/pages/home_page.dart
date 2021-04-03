@@ -105,10 +105,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<List<CompanyModel>> loadData() async {
-    final jsonData = await rootBundle.loadString('assets/companies.json');
+    final jsonData = await rootBundle.loadString('assets/companies_test.json');
     final companies = companyModelFromJson(jsonData);
     // ignore: cascade_invocations
-    companies.shuffle();
+    // companies.shuffle();
     isLoaded = true;
     return companies;
   }
