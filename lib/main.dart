@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_company_listing/home_page.dart';
+import 'package:flutter_company_listing/pages/home_page.dart';
 import 'package:flutter_company_listing/model/theme_provider.dart';
 import 'package:provider/provider.dart';
 

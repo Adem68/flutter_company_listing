@@ -1,0 +1,29 @@
+[
+  {
+    "name": "T.C. İçişleri Bakanlığı Emniyet Genel Müdürlüğü",
+    "website": "https://www.egm.gov.tr/",
+    "jobUrl": "",
+    "linkedin": "",
+    "apps": [
+      {
+        "name": "EGM SEC",
+        "description": "",
+        "playStore": "https://play.google.com/store/apps/details?id=com.egm.sec",
+        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787?l=tr"
+      }
+    ]
+  },
+  {
+    "name": "IBTECH A.S.",
+    "website": "https://www.ibtech.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/ibtech-a-s-",
+    "apps": [
+      {
+        "name": "Mono",
+        "website": "https://www.monoapp.net/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.ictech.mono"
+      }
+    ]
+  }
+]

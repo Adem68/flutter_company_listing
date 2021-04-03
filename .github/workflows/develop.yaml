@@ -1,0 +1,27 @@
+name: Development Deploy
+'on':
+  push:
+    branches:
+      - "develop"
+jobs:
+  on-push-develop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: stable
+      - name: Enable Web
+        run: flutter config --enable-web
+      - name: Build Web application
+        run: flutter build web
+      - uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+        with:
+          html_path: './build/web/index.html'
+          base_href: 'https://adem68.github.io/flutter_company_listing/develop/'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.MY_GITHUB_API_TOKEN }}
+          publish_dir: ./build/web
+          destination_dir: develop

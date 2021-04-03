@@ -5,6 +5,7 @@ import 'package:flutter_company_listing/model/company_model.dart';
 
 // packages
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_company_listing/pages/company_detail_page.dart';
 import 'package:mdi/mdi.dart';
 import 'package:octo_image/octo_image.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -16,8 +17,7 @@ class CompanyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final uri = Uri.parse(item.website);
-    final websiteUrl = uri.host.replaceAll('www.', '');
+    final websiteUrl = Uri.parse(item.website).host.replaceAll('www.', '');
 
     return Padding(
       padding: const EdgeInsets.all(8),
@@ -29,8 +29,13 @@ class CompanyCard extends StatelessWidget {
         child: InkWell(
           borderRadius: BorderRadius.circular(10),
           onTap: () async {
-            if (await canLaunch(item.website)) {
-              await launch(item.website);
+            if (item.apps != null) {
+              await Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => CompanyDetailPage(item: item)));
+            } else {
+              if (await canLaunch(item.website)) {
+                await launch(item.website);
+              }
             }
           },
           child: Row(
