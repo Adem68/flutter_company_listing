@@ -66,9 +66,10 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                                         child: CircularProgressIndicator(),
                                       ),
                                       image: NetworkImage(
-                                        appItem.imageUrl!,
+                                        '$corsUnlocker/${appItem.imageUrl!}',
                                         headers: {
                                           'access-control-allow-origin': '*',
+                                          'origin': 'https://adem68.github.io'
                                         },
                                       ),
                                     ),
@@ -120,9 +121,10 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
         .substring(2);
 
     final res = await http.get(
-      Uri.parse('https://itunes.apple.com/lookup?id=$appId'),
+      Uri.parse('$corsUnlocker/https://itunes.apple.com/lookup?id=$appId'),
       headers: {
         'access-control-allow-origin': '*',
+        'origin': 'https://adem68.github.io'
       },
     );
 
