@@ -54228,10 +54228,10 @@ k.a=j.a
 s=b.a8(t.w).f
 r=L.a7j("Which Companies Using Flutter in Turkey",l,l,A.uZ(l,l,j.a?C.j:C.k,l,l,l,l,l,l,l,l,l,l,l,l,l,!0,l,l,l,l,l,l))
 q=j.a
-p=B.rv(l,L.R5(C.yt,q?C.j:C.k),new X.a0C(m),l,l)
+p=B.rv(l,L.R5(C.yt,q?C.j:C.k),new X.a0C(m),24,l)
 o=q?C.yu:C.ys
 n=t.F
-k=H.b([p,B.rv(l,L.R5(o,q?C.j:C.k),new X.a0D(k,j),l,l)],n)
+k=H.b([p,B.rv(l,L.R5(o,q?C.j:C.k),new X.a0D(k,j),24,l)],n)
 q=m.d?l:m.qT()
 return new M.ub(new E.qa(r,k,!0,new P.a4(1/0,56),l),T.akf(H.b([new B.ne(q,new X.a0E(m,s.a),l,t.AQ)],n),C.pY),l)},
 qT:function(){var s=0,r=P.X(t.CK),q,p=this,o,n
