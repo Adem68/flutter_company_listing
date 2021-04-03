@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:mdi/mdi.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -63,7 +61,7 @@ class _HomePageState extends State<HomePage> {
             splashRadius: 24,
             onPressed: () async {
               isLightMode = !isLightMode;
-              themeProvider.setThemeData(val: isLightMode);
+              themeProvider.setTheme(val: isLightMode);
             },
             icon: Icon(
               themeProvider.isLightTheme
@@ -81,56 +79,21 @@ class _HomePageState extends State<HomePage> {
             future: isLoaded ? null : loadData(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                if (kIsWeb) {
-                  return Expanded(
-                    child: GridView.builder(
-                      padding: const EdgeInsets.all(10),
-                      physics: const BouncingScrollPhysics(),
-                      itemCount: snapshot.data!.length,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount:
-                            calculateCrossAxisCount(screenSize.width),
-                        childAspectRatio:
-                            calculateAscpectRatio(screenSize.width),
-                      ),
-                      itemBuilder: (context, index) {
-                        final item = snapshot.data![index];
-                        return CompanyCard(item);
-                      },
+                return Expanded(
+                  child: GridView.builder(
+                    padding: const EdgeInsets.all(10),
+                    physics: const BouncingScrollPhysics(),
+                    itemCount: snapshot.data!.length,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: calculateCrossAxisCount(screenSize.width),
+                      childAspectRatio: calculateAscpectRatio(screenSize.width),
                     ),
-                  );
-                } else {
-                  return Expanded(
-                    child: AnimationLimiter(
-                      child: GridView.builder(
-                        padding: const EdgeInsets.all(10),
-                        physics: const BouncingScrollPhysics(),
-                        itemCount: snapshot.data!.length,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount:
-                              calculateCrossAxisCount(screenSize.width),
-                          childAspectRatio:
-                              calculateAscpectRatio(screenSize.width),
-                        ),
-                        itemBuilder: (context, index) {
-                          final item = snapshot.data![index];
-                          return AnimationConfiguration.staggeredGrid(
-                            columnCount:
-                                calculateCrossAxisCount(screenSize.width),
-                            position: index,
-                            duration: const Duration(milliseconds: 500),
-                            child: ScaleAnimation(
-                              scale: 0.5,
-                              child: FadeInAnimation(
-                                child: CompanyCard(item),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  );
-                }
+                    itemBuilder: (context, index) {
+                      final item = snapshot.data![index];
+                      return CompanyCard(item);
+                    },
+                  ),
+                );
               } else {
                 return const Center(child: CircularProgressIndicator());
               }

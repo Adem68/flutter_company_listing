@@ -7,7 +7,7 @@ class ThemeProvider with ChangeNotifier {
 
   bool isLightTheme;
 
-  void setThemeData({required bool val}) {
+  void setTheme({required bool val}) {
     if (val) {
       isLightTheme = true;
     } else {
