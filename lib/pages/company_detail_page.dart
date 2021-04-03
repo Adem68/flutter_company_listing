@@ -122,11 +122,10 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                                   AppScreenShots(
                                     screenshots: snapshot.data!.screenshots!,
                                   ),
-                                if (index != apps.length)
-                                  const Divider(
-                                    thickness: 1,
-                                    color: Colors.grey,
-                                  )
+                                const Divider(
+                                  thickness: 1,
+                                  color: Colors.grey,
+                                )
                               ],
                             ),
                           );
