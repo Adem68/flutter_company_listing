@@ -1,1 +1,6 @@
 include: package:flutrlint/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
