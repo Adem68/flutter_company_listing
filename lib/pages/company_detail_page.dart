@@ -37,7 +37,10 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(widget.item.name),
+          title: Text(
+            widget.item.name,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: Column(
           mainAxisSize: MainAxisSize.min,
