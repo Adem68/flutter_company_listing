@@ -15,6 +15,7 @@ class CompanyModel with _$CompanyModel {
     required String website,
     @Default('') String jobUrl,
     @Default('') String linkedin,
+    @Default('') String? logoUrl,
     List<AppModel>? apps,
   }) = _CompanyModel;
 

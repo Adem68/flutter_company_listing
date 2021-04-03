@@ -25,12 +25,14 @@ class _$CompanyModelTearOff {
       required String website,
       String jobUrl = '',
       String linkedin = '',
+      String? logoUrl = '',
       List<AppModel>? apps}) {
     return _CompanyModel(
       name: name,
       website: website,
       jobUrl: jobUrl,
       linkedin: linkedin,
+      logoUrl: logoUrl,
       apps: apps,
     );
   }
@@ -49,6 +51,7 @@ mixin _$CompanyModel {
   String get website => throw _privateConstructorUsedError;
   String get jobUrl => throw _privateConstructorUsedError;
   String get linkedin => throw _privateConstructorUsedError;
+  String? get logoUrl => throw _privateConstructorUsedError;
   List<AppModel>? get apps => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -67,6 +70,7 @@ abstract class $CompanyModelCopyWith<$Res> {
       String website,
       String jobUrl,
       String linkedin,
+      String? logoUrl,
       List<AppModel>? apps});
 }
 
@@ -84,6 +88,7 @@ class _$CompanyModelCopyWithImpl<$Res> implements $CompanyModelCopyWith<$Res> {
     Object? website = freezed,
     Object? jobUrl = freezed,
     Object? linkedin = freezed,
+    Object? logoUrl = freezed,
     Object? apps = freezed,
   }) {
     return _then(_value.copyWith(
@@ -103,6 +108,10 @@ class _$CompanyModelCopyWithImpl<$Res> implements $CompanyModelCopyWith<$Res> {
           ? _value.linkedin
           : linkedin // ignore: cast_nullable_to_non_nullable
               as String,
+      logoUrl: logoUrl == freezed
+          ? _value.logoUrl
+          : logoUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
       apps: apps == freezed
           ? _value.apps
           : apps // ignore: cast_nullable_to_non_nullable
@@ -123,6 +132,7 @@ abstract class _$CompanyModelCopyWith<$Res>
       String website,
       String jobUrl,
       String linkedin,
+      String? logoUrl,
       List<AppModel>? apps});
 }
 
@@ -142,6 +152,7 @@ class __$CompanyModelCopyWithImpl<$Res> extends _$CompanyModelCopyWithImpl<$Res>
     Object? website = freezed,
     Object? jobUrl = freezed,
     Object? linkedin = freezed,
+    Object? logoUrl = freezed,
     Object? apps = freezed,
   }) {
     return _then(_CompanyModel(
@@ -161,6 +172,10 @@ class __$CompanyModelCopyWithImpl<$Res> extends _$CompanyModelCopyWithImpl<$Res>
           ? _value.linkedin
           : linkedin // ignore: cast_nullable_to_non_nullable
               as String,
+      logoUrl: logoUrl == freezed
+          ? _value.logoUrl
+          : logoUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
       apps: apps == freezed
           ? _value.apps
           : apps // ignore: cast_nullable_to_non_nullable
@@ -178,6 +193,7 @@ class _$_CompanyModel implements _CompanyModel {
       required this.website,
       this.jobUrl = '',
       this.linkedin = '',
+      this.logoUrl = '',
       this.apps});
 
   factory _$_CompanyModel.fromJson(Map<String, dynamic> json) =>
@@ -193,12 +209,15 @@ class _$_CompanyModel implements _CompanyModel {
   @JsonKey(defaultValue: '')
   @override
   final String linkedin;
+  @JsonKey(defaultValue: '')
+  @override
+  final String? logoUrl;
   @override
   final List<AppModel>? apps;
 
   @override
   String toString() {
-    return 'CompanyModel(name: $name, website: $website, jobUrl: $jobUrl, linkedin: $linkedin, apps: $apps)';
+    return 'CompanyModel(name: $name, website: $website, jobUrl: $jobUrl, linkedin: $linkedin, logoUrl: $logoUrl, apps: $apps)';
   }
 
   @override
@@ -215,6 +234,9 @@ class _$_CompanyModel implements _CompanyModel {
             (identical(other.linkedin, linkedin) ||
                 const DeepCollectionEquality()
                     .equals(other.linkedin, linkedin)) &&
+            (identical(other.logoUrl, logoUrl) ||
+                const DeepCollectionEquality()
+                    .equals(other.logoUrl, logoUrl)) &&
             (identical(other.apps, apps) ||
                 const DeepCollectionEquality().equals(other.apps, apps)));
   }
@@ -226,6 +248,7 @@ class _$_CompanyModel implements _CompanyModel {
       const DeepCollectionEquality().hash(website) ^
       const DeepCollectionEquality().hash(jobUrl) ^
       const DeepCollectionEquality().hash(linkedin) ^
+      const DeepCollectionEquality().hash(logoUrl) ^
       const DeepCollectionEquality().hash(apps);
 
   @JsonKey(ignore: true)
@@ -245,6 +268,7 @@ abstract class _CompanyModel implements CompanyModel {
       required String website,
       String jobUrl,
       String linkedin,
+      String? logoUrl,
       List<AppModel>? apps}) = _$_CompanyModel;
 
   factory _CompanyModel.fromJson(Map<String, dynamic> json) =
@@ -258,6 +282,8 @@ abstract class _CompanyModel implements CompanyModel {
   String get jobUrl => throw _privateConstructorUsedError;
   @override
   String get linkedin => throw _privateConstructorUsedError;
+  @override
+  String? get logoUrl => throw _privateConstructorUsedError;
   @override
   List<AppModel>? get apps => throw _privateConstructorUsedError;
   @override
