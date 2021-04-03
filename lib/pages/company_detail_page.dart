@@ -183,7 +183,7 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
     final res = await http.get(
       Uri.parse('https://itunes.apple.com/lookup?id=$appId'),
       headers: {
-        'access-control-allow-origin': '*',
+        'access-control-allow-origin': 'https://adem68.github.io',
       },
     );
 
@@ -275,7 +275,7 @@ class AppLogo extends StatelessWidget {
           image: CachedNetworkImageProvider(
             imageUrl,
             headers: {
-              'access-control-allow-origin': '*',
+              'access-control-allow-origin': 'https://adem68.github.io',
             },
           ),
         ),
