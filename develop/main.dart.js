@@ -56283,7 +56283,7 @@ m=n.nn(0,m).ar(0,0).b[0]
 m.toString
 n=t.N
 s=3
-return P.J(G.auR(P.hr("https://itunes.apple.com/lookup?id="+C.b.bv(m,2),0,null),P.ay(["access-control-allow-origin","*"],n,n)),$async$oX)
+return P.J(G.auR(P.hr("https://itunes.apple.com/lookup?id="+C.b.bv(m,2),0,null),P.ay(["access-control-allow-origin","https://adem68.github.io"],n,n)),$async$oX)
 case 3:p=c
 o=Z.arl(J.aY(J.aY(C.b4.cs(0,B.auI(U.asI(p.e).c.a.h(0,"charset")).cs(0,p.x)),"results"),0))
 q=a.GZ(o.a,o.c)
@@ -56348,7 +56348,7 @@ return new T.ct(C.lG,T.a9e(K.kZ(10),new U.nV(M.af4(s,s,new D.oh(a,1)),s,s,s,392,
 $S:344}
 Z.z7.prototype={
 O:function(a,b){var s=t.N
-return T.a9e(K.kZ(20),U.aez(A.aey(C.qn),C.lu,100,X.ade(this.c,P.ay(["access-control-allow-origin","*"],s,s)),new Z.NB(),100))}}
+return T.a9e(K.kZ(20),U.aez(A.aey(C.qn),C.lu,100,X.ade(this.c,P.ay(["access-control-allow-origin","https://adem68.github.io"],s,s)),new Z.NB(),100))}}
 Z.NB.prototype={
 $1:function(a){return C.ly},
 $S:127}
