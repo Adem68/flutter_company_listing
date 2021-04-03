@@ -58,6 +58,7 @@
     "website": "https://ratel.com.tr/",
     "jobUrl": "https://ratel.com.tr/tr/kariyer/",
     "linkedin": "https://www.linkedin.com/company/ratel/",
+    "logoUrl": "https://ratel.com.tr/wp-content/uploads/2016/12/ratel_logo-white_back_400.png",
     "apps": [
       {
         "name": "2021 Wallpapers",
@@ -83,7 +84,8 @@
     "name": "Vestel",
     "website": "https://www.vestel.com.tr/",
     "jobUrl": "https://www.kariyer.net/firma-profil/vestel-a-s-1115-1249",
-    "linkedin": "https://www.linkedin.com/company/vestel/"
+    "linkedin": "https://www.linkedin.com/company/vestel/",
+    "logoUrl": "https://static.vestel.com.tr/cmsresources/Vestel-Yeni/Medya/Logolar/vestel-kirmizi-logo-buyuk.png"
   },
   {
     "name": "DeFacto",
@@ -102,6 +104,7 @@
     "website": "https://www.potensas.com/",
     "jobUrl": "",
     "linkedin": "https://www.linkedin.com/company/potensas/",
+    "logoUrl": "https://potensas.com/img/intro-bg.jpg",
     "apps": [
       {
         "name": "Earthquake & Go Ba‪g‬",
@@ -225,13 +228,15 @@
     "name": "TellMe",
     "website": "https://tellme.gen.tr/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/tellmecorp/"
+    "linkedin": "https://www.linkedin.com/company/tellmecorp/",
+    "logoUrl": "https://tellme.gen.tr/tellme_logoOK-01.jpg"
   },
   {
     "name": "Rh Pozitif",
     "website": "https://rhpozitif.com/",
     "jobUrl": "",
     "linkedin": "https://www.linkedin.com/company/rh-pozitif/",
+    "logoUrl": "https://rhpozitif.com/assets/logos/logo.png",
     "apps": [
       {
         "name": "RH Sözlük",
@@ -245,7 +250,8 @@
     "name": "Tahsilist",
     "website": "https://tahsilist.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/tahsilist-yazılım-a-ş/"
+    "linkedin": "https://www.linkedin.com/company/tahsilist-yazılım-a-ş/",
+    "logoUrl": "https://tahsilist.com/WebTemplate/img/logos/thslstLogo.png"
   },
   {
     "name": "Aviled Avize & Aksesuar",
