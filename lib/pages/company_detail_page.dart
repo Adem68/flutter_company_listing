@@ -67,9 +67,6 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                                       ),
                                       image: NetworkImage(
                                         appItem.imageUrl!,
-                                        headers: {
-                                          'origin': 'itunes.apple.com',
-                                        },
                                       ),
                                     ),
                                   ),
@@ -100,7 +97,7 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                           );
                         } else {
                           return const Center(
-                            child: Text('app store yok hacı'),
+                            child: Text('AppStore link not found'),
                           );
                           //const Center(child: CircularProgressIndicator())
                         }
@@ -120,16 +117,11 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
         .substring(2);
 
     final res = await http.get(
-      Uri.parse('$corsUnlocker/https://itunes.apple.com/lookup?id=$appId'),
-      headers: {
-        'origin': 'itunes.apple.com',
-      },
+      Uri.parse('https://itunes.apple.com/lookup?id=$appId'),
     );
 
     final appStoreItem =
         AppStoreModel.fromJson(json.decode(res.body)['results'][0]);
-
-    print('$corsUnlocker/${appStoreItem.artworkUrl100}');
 
     return appItem.copyWith(
       screenshots: appStoreItem.screenshotUrls,
