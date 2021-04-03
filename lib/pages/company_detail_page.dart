@@ -67,6 +67,9 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                                       ),
                                       image: NetworkImage(
                                         appItem.imageUrl!,
+                                        headers: {
+                                          'access-control-allow-origin': '*',
+                                        },
                                       ),
                                     ),
                                   ),
@@ -118,6 +121,9 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
 
     final res = await http.get(
       Uri.parse('https://itunes.apple.com/lookup?id=$appId'),
+      headers: {
+        'access-control-allow-origin': '*',
+      },
     );
 
     final appStoreItem =
