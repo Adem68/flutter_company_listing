@@ -9309,7 +9309,8 @@ Hc:function Hc(a){this.a=null
 this.b=a
 this.c=null},
 a1N:function a1N(a){this.a=a},
-a1M:function a1M(a){this.a=a},
+a1M:function a1M(a,b){this.a=a
+this.b=b},
 a1K:function a1K(){},
 a1L:function a1L(){},
 ni:function ni(a){this.a=a},
@@ -56279,7 +56280,7 @@ m=n.nk(0,m).as(0,0).b[0]
 m.toString
 n=t.N
 s=3
-return P.L(G.auJ(P.hs("https://itunes.apple.com/lookup?id="+C.b.bw(m,2),0,null),P.ax(["access-control-allow-origin","*"],n,n)),$async$oT)
+return P.L(G.auJ(P.hs("https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id="+C.b.bw(m,2),0,null),P.ax(["access-control-allow-origin","*","origin","https://adem68.github.io"],n,n)),$async$oT)
 case 3:p=c
 o=Z.ard(J.aY(J.aY(C.b4.cs(0,B.auA(U.asA(p.e).c.a.h(0,"charset")).cs(0,p.x)),"results"),0))
 q=a.GT(o.b,o.a,o.c)
@@ -56288,9 +56289,8 @@ break
 case 1:return P.T(q,r)}})
 return P.U($async$oT,r)}}
 Z.a1N.prototype={
-$2:function(a,b){var s=this.a,r=s.a.c.gqG()[b]
-s=r.gwL().length===0?null:s.oT(r)
-return B.adM(new Z.a1M(r),s,t.f7)},
+$2:function(a,b){var s=this.a,r=s.a.c.gqG()[b],q=r.gwL().length===0?null:s.oT(r)
+return B.adM(new Z.a1M(s,r),q,t.f7)},
 $C:"$2",
 $R:2,
 $S:341}
@@ -56298,11 +56298,12 @@ Z.a1M.prototype={
 $2:function(a,b){var s,r,q,p,o,n=null
 if(b.b!=null){s=K.ne(20)
 r=A.aeq(C.qi)
-q=this.a
+q=this.b
 p=q.gI2()
 p.toString
+p="https://cors-anywhere.herokuapp.com/"+p
 o=t.N
-P.ax(["access-control-allow-origin","*"],o,o)
+P.ax(["access-control-allow-origin","*","origin","https://adem68.github.io"],o,o)
 p=T.add(s,U.aer(r,C.iR,100,new D.lP(p,1),new Z.a1K(),100))
 r=L.vE(q.ga4(q),n,n,n)
 s=q.gHa(q)
