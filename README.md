@@ -4,7 +4,7 @@
 
 ### [Demo](https://adem68.github.io/flutter_company_listing/#/)
 
-### You can easily see which companies are using Flutter in Turkey. Also, you can easily handle your Flutter job search via this project.
+###  You can easily see which companies are using Flutter in Turkey. Also, you can see which projects companies use Flutter.
  
 #### Company Logos are provided by [Clearbit](https://clearbit.com/).
 
