@@ -50,12 +50,15 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                   itemCount: widget.item.apps!.length,
                   itemBuilder: (context, index) {
                     final appItem = apps[index];
+                    var isLoaded = false;
+
                     return FutureBuilder<AppModel>(
-                      future: appItem.appStore!.isEmpty
+                      future: isLoaded || appItem.appStore!.isEmpty
                           ? null
                           : getAppStoreData(appItem),
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
+                          isLoaded = true;
                           return Padding(
                             padding: const EdgeInsets.only(bottom: 20),
                             child: Column(
