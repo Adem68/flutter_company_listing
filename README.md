@@ -27,7 +27,7 @@ url_launcher
 
 ----
 
-#### Application logos and screenshot are provided by [iTunes API](https://itunes.apple.com/lookup?id=640199958)
+#### Application logos and screenshots are provided by [iTunes API](https://itunes.apple.com/lookup?id=640199958)
 
 ###### Sample Usage: `https://itunes.apple.com/lookup?id=appId`
 
