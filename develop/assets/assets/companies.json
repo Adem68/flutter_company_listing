@@ -1,0 +1,356 @@
+[
+  {
+    "name": "Radity",
+    "website": "https://radity.com/",
+    "jobUrl": "https://radity.com/en/careers/",
+    "linkedin": "https://www.linkedin.com/company/radity/",
+    "apps": [
+      {
+        "name": "prEPAre‪d‬",
+        "website": "https://www.prepared.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.prepared",
+        "appStore": "https://apps.apple.com/tr/app/prepared/id1533667853"
+      },
+      {
+        "name": "Chiara",
+        "website": "https://chiara.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.chiara",
+        "appStore": "https://apps.apple.com/tr/app/chiara/id1467873377/"
+      }
+    ]
+  },
+  {
+    "name": "Paraşüt",
+    "website": "https://www.parasut.com/",
+    "jobUrl": "https://parasut.recruitee.com/",
+    "linkedin": "https://www.linkedin.com/company/parasut/",
+    "apps": [
+      {
+        "name": "Atlas Asist",
+        "website": "https://www.parasut.com/lp/atlas-asist",
+        "playStore": "https://play.google.com/store/apps/details?id=com.parasut.atlasasist",
+        "appStore": "https://apps.apple.com/tr/app/atlas-asist/id1534337610/"
+      },
+      {
+        "name": "Mikro Şirketim",
+        "website": "https://www.mikro.com.tr/urunler-ve-hizmetler/mikro-sirketim",
+        "playStore": "https://play.google.com/store/apps/details?id=com.mikro.mikrosirketim",
+        "appStore": "https://apps.apple.com/tr/app/mikro-%C5%9Firketim/id1526677643"
+      }
+    ]
+  },
+  {
+    "name": "Monday Hero",
+    "website": "https://mondayhero.io/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/mondayhero/"
+  },
+  {
+    "name": "Gain",
+    "website": "https://www.gain.tv/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/gainmedya/",
+    "apps": [
+      {
+        "name": "GAİN",
+        "website": "https://www.gain.tv/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.trgain.mikrogain",
+        "appStore": "https://apps.apple.com/us/app/gai-n/id1516180910"
+      }
+    ]
+  },
+  {
+    "name": "Ratel",
+    "website": "https://ratel.com.tr/",
+    "jobUrl": "https://ratel.com.tr/tr/kariyer/",
+    "linkedin": "https://www.linkedin.com/company/ratel/",
+    "apps": [
+      {
+        "name": "2021 Wallpapers",
+        "website": "https://2021wallpaper.com/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.ratel.wallpaper",
+        "appStore": "https://apps.apple.com/us/app/2021-wallpapers-maker-cute-hd/id1555468983"
+      }
+    ]
+  },
+  {
+    "name": "SambaPOS",
+    "website": "https://sambapos.com/",
+    "jobUrl": "https://kodilan.com/firmalar/sambapos-yazilim-a-s",
+    "linkedin": "https://www.linkedin.com/company/sambapos/"
+  },
+  {
+    "name": "Evreka",
+    "website": "https://evreka.co/",
+    "jobUrl": "https://kodilan.com/firmalar/evreka",
+    "linkedin": "https://www.linkedin.com/company/evreka/"
+  },
+  {
+    "name": "Vestel",
+    "website": "https://www.vestel.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/vestel-a-s-1115-1249",
+    "linkedin": "https://www.linkedin.com/company/vestel/"
+  },
+  {
+    "name": "DeFacto",
+    "website": "https://www.defacto.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/defacto-perakende-ticaret-anonim-sirketi-6553-31434",
+    "linkedin": "https://www.linkedin.com/company/defacto_/"
+  },
+  {
+    "name": "Migros",
+    "website": "https://www.migroskurumsal.com/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/migros-ticaret-a-s-15471-6001",
+    "linkedin": "https://www.linkedin.com/company/migros-ticaret/"
+  },
+  {
+    "name": "Potensas",
+    "website": "https://www.potensas.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/potensas/",
+    "apps": [
+      {
+        "name": "Earthquake & Go Ba‪g‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.potensas.lastearthquakes",
+        "appStore": "https://apps.apple.com/tr/app/earthquake-go-bag/id1497322793"
+      }
+    ]
+  },
+  {
+    "name": "Bytelus",
+    "website": "https://bytelus.com/",
+    "jobUrl": "https://kodilan.com/firmalar/bytelus-ou",
+    "linkedin": "https://www.linkedin.com/company/bytelus/"
+  },
+  {
+    "name": "KoçSistem",
+    "website": "https://www.kocsistem.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/kocsistem-12832-41024",
+    "linkedin": "https://www.linkedin.com/company/kocsistem/",
+    "apps": [
+      {
+        "name": "Koç Emekli Vakf‪ı‬",
+        "website": "https://www.khev.org.tr/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.koc.kocemekli",
+        "appStore": "https://apps.apple.com/tr/app/ko%C3%A7-emekli-vakf%C4%B1/id1472325104"
+      }
+    ]
+  },
+  {
+    "name": "PİTON Ar-Ge ve Yazılım Evi",
+    "website": "https://piton.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/piton-ar-ge-ve-yazilim-evi-224324-257287",
+    "linkedin": "https://www.linkedin.com/company/pitonyazilim/"
+  },
+  {
+    "name": "OPLOG",
+    "website": "https://oplog.com.tr/",
+    "jobUrl": "https://join.oplog.com.tr/",
+    "linkedin": "https://www.linkedin.com/company/oplogturkey/"
+  },
+  {
+    "name": "House of Apps",
+    "website": "https://houseofapps.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/house-of-apps/"
+  },
+  {
+    "name": "gelal",
+    "website": "https://gelal.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/gelal/",
+    "apps": [
+      {
+        "name": "gela‪l‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.customer1",
+        "appStore": "https://apps.apple.com/tr/app/gelal/id1499609997"
+      },
+      {
+        "name": "gela‪l‬ Taşımac‪ı",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.transporter1",
+        "appStore": "https://apps.apple.com/tr/app/gelal-ta%C5%9F%C4%B1mac%C4%B1/id1499610595"
+      }
+    ]
+  },
+  {
+    "name": "makromusic",
+    "website": "https://www.makromusic.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/makromusicapp/",
+    "apps": [
+      {
+        "name": "makromusic",
+        "description": "Find Your Music Buddy!",
+        "website": "https://makromusic.com/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.pharos.aytemiz",
+        "appStore": "https://apps.apple.com/tr/app/makromusic-for-spotify/id1498773489"
+      }
+    ]
+  },
+  {
+    "name": "CoFlow Teknoloji",
+    "website": "https://coflow.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/coflow-teknoloji-danismanlik-ve-ticaret-limited-si-226270-259301",
+    "linkedin": "https://www.linkedin.com/company/co-flow-tech/"
+  },
+  {
+    "name": "Başarsoft",
+    "website": "https://www.basarsoft.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/basarsoft-bilgi-teknolojileri-a-s-40271-123260",
+    "linkedin": "https://www.linkedin.com/company/basarsoft/"
+  },
+  {
+    "name": "Modanisa",
+    "website": "https://www.modanisa.com/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/modanisa-elektronik-magazacilik-ve-ticaret-anonim-44974-93350",
+    "linkedin": "https://www.linkedin.com/company/modanisa/"
+  },
+  {
+    "name": "VBT Yazılım A.Ş.",
+    "website": "https://www.vbt.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/vbt-yazilim-a-s-12094-2287",
+    "linkedin": "https://www.linkedin.com/company/vbt-bilgi-teknolojileri/",
+    "apps": [
+      {
+        "name": "Cumhuriyet",
+        "website": "https://www.cumhuriyet.com.tr/",
+        "playStore": "https://play.google.com/store/apps/details?id=tr.com.vbt.cumhuriyetmobileapp",
+        "appStore": "https://apps.apple.com/tr/app/cumhuriyet/id1503350537/"
+      }
+    ]
+  },
+  {
+    "name": "Aytemiz",
+    "website": "https://www.aytemiz.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/aytemiz-akaryakit-dagitim-a-s-24449-15870",
+    "linkedin": "https://www.linkedin.com/company/aytemizofficial/",
+    "apps": [
+      {
+        "name": "Aytemiz Vaay",
+        "website": "https://www.aytemiz.com.tr/vaay/aytemiz-vaay-nedir/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.pharos.aytemiz",
+        "appStore": "https://apps.apple.com/tr/app/aytemiz-mobil/id1076097736"
+      }
+    ]
+  },
+  {
+    "name": "Düşyeri",
+    "website": "https://www.dusyeri.com/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/dusyeri-40010-42922",
+    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/"
+  },
+  {
+    "name": "TellMe",
+    "website": "https://tellme.gen.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/tellmecorp/"
+  },
+  {
+    "name": "Rh Pozitif",
+    "website": "https://rhpozitif.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/rh-pozitif/",
+    "apps": [
+      {
+        "name": "RH Sözlük",
+        "website": "https://www.remzihoca.com",
+        "playStore": "https://play.google.com/store/apps/details?id=com.rh.sozluk",
+        "appStore": "https://apps.apple.com/tr/app/rh-s%C3%B6zl%C3%BCk/id1484805273"
+      }
+    ]
+  },
+  {
+    "name": "Tahsilist",
+    "website": "https://tahsilist.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/tahsilist-yazılım-a-ş/"
+  },
+  {
+    "name": "Aviled Avize & Aksesuar",
+    "website": "https://aviled.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/aviled-avize-&-aksesuar/"
+  },
+  {
+    "name": "Yesil Science",
+    "website": "https://www.yesilscience.com/tr/",
+    "jobUrl": "https://www.yesilscience.com/tr/kariyer/",
+    "linkedin": "https://www.linkedin.com/company/yesil-science/",
+    "apps": [
+      {
+        "name": "Eye Rest Reminder: Eye Exercises and Breaks",
+        "playStore": "https://play.google.com/store/apps/details?id=com.yesilscience.eyerestreminder",
+        "appStore": "https://apps.apple.com/tr/app/eye-rest-reminder/id1559425754"
+      },
+      {
+        "name": "‎Hobbycorn",
+        "playStore": "https://play.google.com/store/apps/details?id=com.yesilscience.hobbycorn",
+        "appStore": "https://apps.apple.com/tr/app/hobbycorn/id1537245676"
+      }
+    ]
+  },
+  {
+    "name": "IBTECH A.S.",
+    "website": "https://www.ibtech.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/ibtech-a-s-",
+    "apps": [
+      {
+        "name": "Mono",
+        "website": "https://www.monoapp.net/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.ictech.mono",
+        "appStore": "https://apps.apple.com/tr/app/mono/id1510777408"
+      }
+    ]
+  },
+  {
+    "name": "T.C. İçişleri Bakanlığı Emniyet Genel Müdürlüğü",
+    "website": "https://www.egm.gov.tr/",
+    "jobUrl": "",
+    "linkedin": "",
+    "apps": [
+      {
+        "name": "EGM SEC",
+        "playStore": "https://play.google.com/store/apps/details?id=com.egm.sec",
+        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787"
+      }
+    ]
+  },
+  {
+    "name": "Huma Breath",
+    "website": "https://humabreath.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/humabreath/",
+    "apps": [
+      {
+        "name": "Huma Breath",
+        "playStore": "https://play.google.com/store/apps/details?id=com.huma.humabreath",
+        "appStore": "https://apps.apple.com/tr/app/huma-breath-breathwork-app/id1522269340"
+      }
+    ]
+  },
+  {
+    "name": "MonoPayments",
+    "website": "https://monopayments.com/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/monopayments/"
+  },
+  {
+    "name": "Gedik",
+    "website": "https://gedik.com.tr",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/gedik-holding/",
+    "apps": [
+      {
+        "name": "Gedik Kaynak Mobil",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gedikmobil",
+        "appStore": "https://apps.apple.com/tr/app/gedik-holding/id1485720053"
+      },
+      {
+        "name": "Radyo Gedik",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gedik.radyo",
+        "appStore": "https://apps.apple.com/tr/app/radyo-gedik-canl%C4%B1-radyo/id1447079740"
+      }
+    ]
+  }
+]
