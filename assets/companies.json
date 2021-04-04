@@ -263,6 +263,11 @@
         "name": "Eye Rest Reminder: Eye Exercises and Breaks",
         "playStore": "https://play.google.com/store/apps/details?id=com.yesilscience.eyerestreminder",
         "appStore": "https://apps.apple.com/tr/app/eye-rest-reminder/id1559425754"
+      },
+      {
+        "name": "‎Hobbycorn",
+        "playStore": "https://play.google.com/store/apps/details?id=com.yesilscience.hobbycorn",
+        "appStore": "https://apps.apple.com/tr/app/hobbycorn/id1537245676"
       }
     ]
   },
@@ -288,9 +293,8 @@
     "apps": [
       {
         "name": "EGM SEC",
-        "description": "",
         "playStore": "https://play.google.com/store/apps/details?id=com.egm.sec",
-        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787?l=tr"
+        "appStore": "https://apps.apple.com/tr/app/egm-sec/id1550089787"
       }
     ]
   },
@@ -298,7 +302,14 @@
     "name": "Huma Breath",
     "website": "https://humabreath.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/humabreath/"
+    "linkedin": "https://www.linkedin.com/company/humabreath/",
+    "apps": [
+      {
+        "name": "Huma Breath",
+        "playStore": "https://play.google.com/store/apps/details?id=com.huma.humabreath",
+        "appStore": "https://apps.apple.com/tr/app/huma-breath-breathwork-app/id1522269340"
+      }
+    ]
   },
   {
     "name": "MonoPayments",

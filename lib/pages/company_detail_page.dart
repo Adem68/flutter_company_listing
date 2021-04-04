@@ -37,7 +37,10 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(widget.item.name),
+          title: Text(
+            widget.item.name,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: Column(
           mainAxisSize: MainAxisSize.min,
@@ -71,33 +74,7 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
                                           imageUrl: snapshot.data!.imageUrl!,
                                         ),
                                       const SizedBox(width: 20),
-                                      Expanded(
-                                        child: Center(
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                appItem.name,
-                                                style: const TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 30,
-                                                ),
-                                              ),
-                                              if (appItem
-                                                  .description!.isNotEmpty)
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.only(
-                                                    top: 10,
-                                                  ),
-                                                  child: Text(
-                                                      appItem.description!),
-                                                ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
+                                      AppTitle(appItem: appItem),
                                       if (appItem.website!.isNotEmpty)
                                         Padding(
                                           padding:
@@ -201,6 +178,40 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
       screenshots: appStoreItem.screenshotUrls,
     );
   }
+}
+
+class AppTitle extends StatelessWidget {
+  const AppTitle({
+    required this.appItem,
+    Key? key,
+  }) : super(key: key);
+
+  final AppModel appItem;
+
+  @override
+  Widget build(BuildContext context) => Expanded(
+        child: Center(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                appItem.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
+              ),
+              if (appItem.description!.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(
+                    top: 10,
+                  ),
+                  child: Text(appItem.description!),
+                ),
+            ],
+          ),
+        ),
+      );
 }
 
 class AppScreenShots extends StatelessWidget {
