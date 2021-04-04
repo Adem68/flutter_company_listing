@@ -10,6 +10,12 @@
         "website": "https://www.prepared.app/",
         "playStore": "https://play.google.com/store/apps/details?id=com.radity.prepared",
         "appStore": "https://apps.apple.com/tr/app/prepared/id1533667853"
+      },
+      {
+        "name": "Chiara",
+        "website": "https://chiara.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.chiara",
+        "appStore": "https://apps.apple.com/tr/app/chiara/id1467873377/"
       }
     ]
   },
