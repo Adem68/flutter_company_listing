@@ -152,7 +152,19 @@
     "name": "gelal",
     "website": "https://gelal.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/gelal/"
+    "linkedin": "https://www.linkedin.com/company/gelal/",
+    "apps": [
+      {
+        "name": "gela‪l‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.customer1",
+        "appStore": "https://apps.apple.com/tr/app/gelal/id1499609997"
+      },
+      {
+        "name": "gela‪l‬ Taşımac‪ı",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.transporter1",
+        "appStore": "https://apps.apple.com/tr/app/gelal-ta%C5%9F%C4%B1mac%C4%B1/id1499610595"
+      }
+    ]
   },
   {
     "name": "makromusic",
