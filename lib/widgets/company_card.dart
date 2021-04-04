@@ -68,7 +68,7 @@ class _CompanyCardState extends State<CompanyCard> {
                         child: CircularProgressIndicator(),
                       ),
                       image: CachedNetworkImageProvider(
-                        item.logoUrl!.isNotEmpty ? item.logoUrl! : imageUrl,
+                        imageUrl,
                       ),
                     ),
                   ),
