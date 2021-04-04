@@ -10,6 +10,12 @@
         "website": "https://www.prepared.app/",
         "playStore": "https://play.google.com/store/apps/details?id=com.radity.prepared",
         "appStore": "https://apps.apple.com/tr/app/prepared/id1533667853"
+      },
+      {
+        "name": "Chiara",
+        "website": "https://chiara.app/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.radity.chiara",
+        "appStore": "https://apps.apple.com/tr/app/chiara/id1467873377/"
       }
     ]
   },
@@ -152,7 +158,19 @@
     "name": "gelal",
     "website": "https://gelal.com/",
     "jobUrl": "",
-    "linkedin": "https://www.linkedin.com/company/gelal/"
+    "linkedin": "https://www.linkedin.com/company/gelal/",
+    "apps": [
+      {
+        "name": "gela‪l‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.customer1",
+        "appStore": "https://apps.apple.com/tr/app/gelal/id1499609997"
+      },
+      {
+        "name": "gela‪l‬ Taşımac‪ı",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gelal.transporter1",
+        "appStore": "https://apps.apple.com/tr/app/gelal-ta%C5%9F%C4%B1mac%C4%B1/id1499610595"
+      }
+    ]
   },
   {
     "name": "makromusic",
@@ -316,5 +334,23 @@
     "website": "https://monopayments.com/",
     "jobUrl": "",
     "linkedin": "https://www.linkedin.com/company/monopayments/"
+  },
+  {
+    "name": "Gedik",
+    "website": "https://gedik.com.tr",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/gedik-holding/",
+    "apps": [
+      {
+        "name": "Gedik Kaynak Mobil",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gedikmobil",
+        "appStore": "https://apps.apple.com/tr/app/gedik-holding/id1485720053"
+      },
+      {
+        "name": "Radyo Gedik",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gedik.radyo",
+        "appStore": "https://apps.apple.com/tr/app/radyo-gedik-canl%C4%B1-radyo/id1447079740"
+      }
+    ]
   }
 ]

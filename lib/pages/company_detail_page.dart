@@ -47,140 +47,179 @@ class _CompanyDetailPageState extends State<CompanyDetailPage> {
           children: [
             Expanded(
               child: ListView.builder(
-                  itemCount: widget.item.apps!.length,
-                  itemBuilder: (context, index) {
-                    final appItem = apps[index];
-                    var isLoaded = false;
+                itemCount: widget.item.apps!.length,
+                itemBuilder: (context, index) {
+                  final appItem = apps[index];
+                  var isLoaded = false;
 
-                    return FutureBuilder<AppModel>(
-                      future: isLoaded || appItem.appStore!.isEmpty
-                          ? null
-                          : getAppStoreData(appItem),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          isLoaded = true;
-                          return Padding(
-                            padding: const EdgeInsets.only(bottom: 20),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 10,
-                                    vertical: 20,
-                                  ),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      if (snapshot.data!.imageUrl!.isNotEmpty)
-                                        AppLogo(
-                                          imageUrl: snapshot.data!.imageUrl!,
-                                        ),
-                                      const SizedBox(width: 20),
-                                      AppTitle(appItem: appItem),
-                                      if (appItem.website!.isNotEmpty)
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(right: 10),
-                                          child: WebsiteButton(
-                                            website: appItem.website!,
-                                          ),
-                                        ),
-                                      if (appItem.playStore!.isNotEmpty)
-                                        StoreButton(
-                                          type: 0,
-                                          storeUrl: appItem.playStore!,
-                                        ),
-                                      StoreButton(
-                                        type: 1,
-                                        storeUrl: appItem.appStore!,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                if (snapshot.data!.screenshots!.isNotEmpty)
-                                  AppScreenShots(
-                                    screenshots: snapshot.data!.screenshots!,
-                                  ),
-                                const Divider(
-                                  thickness: 1,
-                                  color: Colors.grey,
-                                )
-                              ],
-                            ),
-                          );
+                  return FutureBuilder<AppModel>(
+                    future: isLoaded || appItem.appStore!.isEmpty
+                        ? null
+                        : getAppStoreData(appItem),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        isLoaded = true;
+                        return AppWithShowcase(appItem: snapshot.data!);
+                      } else {
+                        if (appItem.appStore!.isNotEmpty && !isLoaded) {
+                          return const AppLoading();
                         } else {
-                          if (appItem.appStore!.isNotEmpty) {
-                            return Center(
-                              child: Column(
-                                children: const [
-                                  SizedBox(height: 20),
-                                  Text('Data getting from App Store'),
-                                  SizedBox(height: 20),
-                                  CircularProgressIndicator(),
-                                ],
-                              ),
-                            );
-                          }
-                          if (appItem.appStore!.isEmpty &&
-                              appItem.playStore!.isNotEmpty) {
-                            return Card(
-                              child: Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Row(
-                                  children: [
-                                    Text(appItem.name),
-                                    const SizedBox(
-                                      width: 20,
-                                    ),
-                                    if (appItem.website!.isNotEmpty)
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(right: 10),
-                                        child: WebsiteButton(
-                                          website: appItem.website!,
-                                        ),
-                                      ),
-                                    StoreButton(
-                                      type: 0,
-                                      storeUrl: appItem.playStore!,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          }
-                          return const Center(
-                            child: Text('Store link not found'),
-                          );
+                          return AppWithoutShowcase(appItem: appItem);
                         }
-                      },
-                    );
-                  }),
+                      }
+                    },
+                  );
+                },
+              ),
             ),
           ],
         ),
       );
 
   Future<AppModel> getAppStoreData(AppModel appItem) async {
+    late AppModel item;
+
     final appId = RegExp('id[0-9]+')
         .allMatches(appItem.appStore!)
         .elementAt(0)
         .group(0)!
         .substring(2);
 
-    final res = await http.get(
-      Uri.parse('https://flutter-company-listing-api.vercel.app/app/$appId'),
-    );
+    try {
+      final response = await http.get(
+        Uri.parse('https://flutter-company-listing-api.vercel.app/app/$appId'),
+      );
 
-    final appStoreItem =
-        AppStoreModel.fromJson(json.decode(res.body)['results'][0]);
+      final appStoreItem =
+          AppStoreModel.fromJson(json.decode(response.body)['results'][0]);
 
-    return appItem.copyWith(
-      imageUrl: appStoreItem.artworkUrl100,
-      screenshots: appStoreItem.screenshotUrls,
-    );
+      item = appItem.copyWith(
+        imageUrl: appStoreItem.artworkUrl100,
+        screenshots: appStoreItem.screenshotUrls,
+      );
+      // ignore: avoid_catches_without_on_clauses
+    } catch (e) {
+      //cannot decode json
+      item = appItem.copyWith(screenshots: []);
+    }
+
+    return item;
   }
+}
+
+class AppWithoutShowcase extends StatelessWidget {
+  const AppWithoutShowcase({
+    required this.appItem,
+    Key? key,
+  }) : super(key: key);
+
+  final AppModel appItem;
+
+  @override
+  Widget build(BuildContext context) => Card(
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Row(
+            children: [
+              Text(appItem.name),
+              const SizedBox(
+                width: 20,
+              ),
+              if (appItem.website!.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: WebsiteButton(
+                    website: appItem.website!,
+                  ),
+                ),
+              StoreButton(
+                type: 0,
+                storeUrl: appItem.playStore!,
+              ),
+              StoreButton(
+                type: 1,
+                storeUrl: appItem.appStore!,
+              ),
+            ],
+          ),
+        ),
+      );
+}
+
+class AppLoading extends StatelessWidget {
+  const AppLoading({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) => Center(
+        child: Column(
+          children: const [
+            SizedBox(height: 20),
+            Text('Data getting from App Store'),
+            SizedBox(height: 20),
+            CircularProgressIndicator(),
+          ],
+        ),
+      );
+}
+
+class AppWithShowcase extends StatelessWidget {
+  const AppWithShowcase({
+    required this.appItem,
+    Key? key,
+  }) : super(key: key);
+
+  final AppModel appItem;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.only(bottom: 10),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10,
+                vertical: 20,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  if (appItem.imageUrl!.isNotEmpty)
+                    AppLogo(
+                      imageUrl: appItem.imageUrl!,
+                    ),
+                  const SizedBox(width: 20),
+                  AppTitle(appItem: appItem),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: WebsiteButton(
+                      website: appItem.website!,
+                    ),
+                  ),
+                  StoreButton(
+                    type: 0,
+                    storeUrl: appItem.playStore!,
+                  ),
+                  StoreButton(
+                    type: 1,
+                    storeUrl: appItem.appStore!,
+                  ),
+                ],
+              ),
+            ),
+            if (appItem.screenshots!.isNotEmpty)
+              AppScreenShots(
+                screenshots: appItem.screenshots!,
+              ),
+            const SizedBox(height: 20),
+            const Divider(
+              thickness: 1,
+              color: Colors.grey,
+            ),
+          ],
+        ),
+      );
 }
 
 class AppTitle extends StatelessWidget {
