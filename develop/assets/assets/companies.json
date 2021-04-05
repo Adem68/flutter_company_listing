@@ -30,7 +30,15 @@
         "website": "https://www.parasut.com/lp/atlas-asist",
         "playStore": "https://play.google.com/store/apps/details?id=com.parasut.atlasasist",
         "appStore": "https://apps.apple.com/tr/app/atlas-asist/id1534337610/"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Mikro Yazılım",
+    "website": "https://www.mikro.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/mikroyazilimas/",
+    "apps": [
       {
         "name": "Mikro Şirketim",
         "website": "https://www.mikro.com.tr/urunler-ve-hizmetler/mikro-sirketim",
@@ -38,6 +46,12 @@
         "appStore": "https://apps.apple.com/tr/app/mikro-%C5%9Firketim/id1526677643"
       }
     ]
+  },
+  {
+    "name": "Zirve",
+    "website": "https://zirveyazilim.net/",
+    "jobUrl": "",
+    "linkedin": "https://tr.linkedin.com/company/zirve-yazilim"
   },
   {
     "name": "Monday Hero",
