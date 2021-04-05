@@ -72,34 +72,28 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          FutureBuilder<List<CompanyModel>>(
-            future: isLoaded ? null : loadData(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                return Expanded(
-                  child: GridView.builder(
-                    padding: const EdgeInsets.all(10),
-                    physics: const BouncingScrollPhysics(),
-                    itemCount: snapshot.data!.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: calculateCrossAxisCount(screenSize.width),
-                      childAspectRatio: calculateAscpectRatio(screenSize.width),
-                    ),
-                    itemBuilder: (context, index) {
-                      final item = snapshot.data![index];
-                      return CompanyCard(item);
-                    },
-                  ),
-                );
-              } else {
-                return const Center(child: CircularProgressIndicator());
-              }
-            },
-          ),
-        ],
+      body: FutureBuilder<List<CompanyModel>>(
+        future: isLoaded ? null : loadData(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return GridView.builder(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(10),
+              physics: const BouncingScrollPhysics(),
+              itemCount: snapshot.data!.length,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: calculateCrossAxisCount(screenSize.width),
+                childAspectRatio: calculateAscpectRatio(screenSize.width),
+              ),
+              itemBuilder: (context, index) {
+                final item = snapshot.data![index];
+                return CompanyCard(item);
+              },
+            );
+          } else {
+            return const Center(child: CircularProgressIndicator());
+          }
+        },
       ),
     );
   }
