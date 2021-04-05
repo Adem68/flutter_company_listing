@@ -251,7 +251,14 @@
     "name": "Düşyeri",
     "website": "https://www.dusyeri.com/",
     "jobUrl": "https://www.kariyer.net/firma-profil/dusyeri-40010-42922",
-    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/"
+    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/",
+    "apps": [
+      {
+        "name": "Düşyeri",
+        "playStore": "https://play.google.com/store/apps/details?id=com.dusyeri.pepeetv",
+        "appStore": "https://apps.apple.com/us/app/d%C3%BC%C5%9Fyeri/id1242887228"
+      }
+    ]
   },
   {
     "name": "TellMe",
