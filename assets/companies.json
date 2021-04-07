@@ -372,5 +372,18 @@
         "appStore": "https://apps.apple.com/tr/app/radyo-gedik-canl%C4%B1-radyo/id1447079740"
       }
     ]
+  },
+  {
+    "name": "PiData Bilişim Teknolojileri A.Ş.",
+    "website": "http://pidata.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/pidatabilisim/",
+    "apps": [
+      {
+        "name": "tlst‪c‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.tales.tls_tc",
+        "appStore": "https://apps.apple.com/tr/app/tlstc/id1549835385"
+      }
+    ]
   }
 ]
