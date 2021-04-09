@@ -23,6 +23,7 @@ class _CompanyCardState extends State<CompanyCard> {
   String websiteUrl = '';
   String imageUrl = '';
   late CompanyModel item;
+  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   void initState() {
@@ -47,8 +48,8 @@ class _CompanyCardState extends State<CompanyCard> {
                 await Navigator.of(context).push(MaterialPageRoute(
                     builder: (_) => CompanyDetailPage(item: item)));
               } else {
-                if (await canLaunch(item.website)) {
-                  await launch(item.website);
+                if (await canLaunch(item.website + utmSource)) {
+                  await launch(item.website + utmSource);
                 }
               }
             },
