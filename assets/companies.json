@@ -404,5 +404,11 @@
         "appStore": "https://apps.apple.com/us/app/protel-insight/id1494091835"
       }
     ]
+  },
+  {
+    "name": "ING Türkiye",
+    "website": "https://www.ing.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/ing-turkiye/"
   }
 ]
