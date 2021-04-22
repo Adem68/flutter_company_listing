@@ -7,7 +7,6 @@
     "apps": [
       {
         "name": "prEPAre‪d‬",
-        "website": "https://www.prepared.app/",
         "playStore": "https://play.google.com/store/apps/details?id=com.radity.prepared",
         "appStore": "https://apps.apple.com/tr/app/prepared/id1533667853"
       },
@@ -251,7 +250,14 @@
     "name": "Düşyeri",
     "website": "https://www.dusyeri.com/",
     "jobUrl": "https://www.kariyer.net/firma-profil/dusyeri-40010-42922",
-    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/"
+    "linkedin": "https://www.linkedin.com/company/d-yeri-izgi-film-st-dyosu/",
+    "apps": [
+      {
+        "name": "Düşyeri",
+        "playStore": "https://play.google.com/store/apps/details?id=com.dusyeri.pepeetv",
+        "appStore": "https://apps.apple.com/us/app/d%C3%BC%C5%9Fyeri/id1242887228"
+      }
+    ]
   },
   {
     "name": "TellMe",
@@ -366,5 +372,43 @@
         "appStore": "https://apps.apple.com/tr/app/radyo-gedik-canl%C4%B1-radyo/id1447079740"
       }
     ]
+  },
+  {
+    "name": "PiData Bilişim Teknolojileri A.Ş.",
+    "website": "http://pidata.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/pidatabilisim/",
+    "apps": [
+      {
+        "name": "tlst‪c‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.tales.tls_tc",
+        "appStore": "https://apps.apple.com/tr/app/tlstc/id1549835385"
+      }
+    ]
+  },
+  {
+    "name": "Protel Bilgisayar A.Ş.",
+    "website": "https://www.protel.com.tr/",
+    "jobUrl": "https://www.kariyer.net/firma-profil/protel-bilgisayar-a-s-3888-28771",
+    "linkedin": "https://www.linkedin.com/company/protel-bilgisayar-a.%C5%9F./",
+    "apps": [
+      {
+        "name": "Simpra Insight",
+        "website": "https://simprasuite.com.tr/",
+        "playStore": "https://play.google.com/store/apps/details?id=com.protein.rms.insight",
+        "appStore": "https://apps.apple.com/tr/app/simpra-insight-analiz/id1449586798"
+      },
+      {
+        "name": "Protel Insight",
+        "playStore": "https://play.google.com/store/apps/details?id=com.protel.MicrosInsight",
+        "appStore": "https://apps.apple.com/us/app/protel-insight/id1494091835"
+      }
+    ]
+  },
+  {
+    "name": "ING Türkiye",
+    "website": "https://www.ing.com.tr/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/ing-turkiye/"
   }
 ]
