@@ -422,5 +422,17 @@
     "website": "https://www.internative.net/",
     "jobUrl": "",
     "linkedin": "https://www.linkedin.com/company/internativenet/"
+  },
+  {
+    "name": "Oyuncu Market",
+    "website": "https://oyuncu.market/",
+    "jobUrl": "",
+    "linkedin": "https://www.linkedin.com/company/oyuncu-market/",
+    "apps": [
+      {
+        "name": "Oyuncu Market‬",
+        "playStore": "https://play.google.com/store/apps/details?id=com.oyuncu.market",
+        "appStore": "https://apps.apple.com/app/id1503891281"
+      }
   }
 ]
