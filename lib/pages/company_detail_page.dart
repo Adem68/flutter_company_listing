@@ -114,7 +114,6 @@ class AppWithoutShowcase extends StatelessWidget {
   }) : super(key: key);
 
   final AppModel appItem;
-  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => Card(
@@ -130,16 +129,16 @@ class AppWithoutShowcase extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 10),
                   child: WebsiteButton(
-                    website: appItem.website! + utmSource,
+                    website: appItem.website!,
                   ),
                 ),
               StoreButton(
                 type: 0,
-                storeUrl: appItem.playStore! + utmSource,
+                storeUrl: appItem.playStore!,
               ),
               StoreButton(
                 type: 1,
-                storeUrl: appItem.appStore! + utmSource,
+                storeUrl: appItem.appStore!,
               ),
             ],
           ),
@@ -172,7 +171,6 @@ class AppWithShowcase extends StatelessWidget {
   }) : super(key: key);
 
   final AppModel appItem;
-  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => Padding(
@@ -196,16 +194,16 @@ class AppWithShowcase extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: WebsiteButton(
-                      website: appItem.website! + utmSource,
+                      website: appItem.website!,
                     ),
                   ),
                   StoreButton(
                     type: 0,
-                    storeUrl: appItem.playStore! + utmSource,
+                    storeUrl: appItem.playStore!,
                   ),
                   StoreButton(
                     type: 1,
-                    storeUrl: appItem.appStore! + utmSource,
+                    storeUrl: appItem.appStore!,
                   ),
                 ],
               ),
@@ -349,13 +347,14 @@ class StoreButton extends StatelessWidget {
 
   final int type;
   final String storeUrl;
+  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => IconButton(
         splashRadius: 24,
         onPressed: () async {
-          if (await canLaunch(storeUrl)) {
-            await launch(storeUrl);
+          if (await canLaunch(storeUrl + utmSource)) {
+            await launch(storeUrl + utmSource);
           }
         },
         icon: Icon(type == 0 ? Mdi.google : Mdi.apple),
@@ -369,13 +368,14 @@ class WebsiteButton extends StatelessWidget {
   }) : super(key: key);
 
   final String website;
+  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => IconButton(
         splashRadius: 24,
         onPressed: () async {
-          if (await canLaunch(website)) {
-            await launch(website);
+          if (await canLaunch(website + utmSource)) {
+            await launch(website + utmSource);
           }
         },
         icon: const Icon(Mdi.web),
