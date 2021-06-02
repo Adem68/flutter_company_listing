@@ -114,6 +114,7 @@ class AppWithoutShowcase extends StatelessWidget {
   }) : super(key: key);
 
   final AppModel appItem;
+  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => Card(
@@ -129,16 +130,16 @@ class AppWithoutShowcase extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 10),
                   child: WebsiteButton(
-                    website: appItem.website!,
+                    website: appItem.website! + utmSource,
                   ),
                 ),
               StoreButton(
                 type: 0,
-                storeUrl: appItem.playStore!,
+                storeUrl: appItem.playStore! + utmSource,
               ),
               StoreButton(
                 type: 1,
-                storeUrl: appItem.appStore!,
+                storeUrl: appItem.appStore! + utmSource,
               ),
             ],
           ),
@@ -171,6 +172,7 @@ class AppWithShowcase extends StatelessWidget {
   }) : super(key: key);
 
   final AppModel appItem;
+  final String utmSource = '?utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => Padding(
@@ -194,16 +196,16 @@ class AppWithShowcase extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: WebsiteButton(
-                      website: appItem.website!,
+                      website: appItem.website! + utmSource,
                     ),
                   ),
                   StoreButton(
                     type: 0,
-                    storeUrl: appItem.playStore!,
+                    storeUrl: appItem.playStore! + utmSource,
                   ),
                   StoreButton(
                     type: 1,
-                    storeUrl: appItem.appStore!,
+                    storeUrl: appItem.appStore! + utmSource,
                   ),
                 ],
               ),
