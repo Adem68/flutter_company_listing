@@ -347,14 +347,14 @@ class StoreButton extends StatelessWidget {
 
   final int type;
   final String storeUrl;
-  final String utmSource = 'utm_source=flutter_company_listing_github';
 
   @override
   Widget build(BuildContext context) => IconButton(
         splashRadius: 24,
         onPressed: () async {
-          if (await canLaunch(storeUrl + type == 0 ? '&' : '?' + utmSource)) {
-            await launch(storeUrl + type == 0 ? '&' : '?' +  utmSource);
+          final link = storeUrl + type == 0 ? '&' : '?' + 'utm_source=flutter_company_listing_github';
+          if (await canLaunch(link)) {
+            await launch(link);
           }
         },
         icon: Icon(type == 0 ? Mdi.google : Mdi.apple),
