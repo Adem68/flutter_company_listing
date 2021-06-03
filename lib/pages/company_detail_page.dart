@@ -352,7 +352,8 @@ class StoreButton extends StatelessWidget {
   Widget build(BuildContext context) => IconButton(
         splashRadius: 24,
         onPressed: () async {
-          final link = storeUrl + type == 0 ? '&' : '?' + 'utm_source=flutter_company_listing_github';
+          final prefix = type == 0 ? '&' : '?';
+          final link = storeUrl + prefix + 'utm_source=flutter_company_listing_github';
           if (await canLaunch(link)) {
             await launch(link);
           }
