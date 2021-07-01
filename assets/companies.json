@@ -367,6 +367,11 @@
         "appStore": "https://apps.apple.com/tr/app/gedik-holding/id1485720053"
       },
       {
+        "name": "Gedik Üniversitesi Aday",
+        "playStore": "https://play.google.com/store/apps/details?id=com.gedik.gebis",
+        "appStore": "https://apps.apple.com/us/app/i-stanbul-gedik-%C3%BCniversitesi/id1443808966"
+      },
+      {
         "name": "Radyo Gedik",
         "playStore": "https://play.google.com/store/apps/details?id=com.gedik.radyo",
         "appStore": "https://apps.apple.com/tr/app/radyo-gedik-canl%C4%B1-radyo/id1447079740"
